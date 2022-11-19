@@ -3,13 +3,14 @@
 // Var 1
 
 Console.WriteLine("Введи 3-х значное число:");
-string num = Console.ReadLine()!;
+int numInt = int.Parse(Console.ReadLine()!);
+string numStr = Convert.ToString(num);
 
-if (num.Length != 3)
+if (numStr.Length != 3)
     {
         Console.WriteLine("Введено некорректное число!");
     }
 else
 {
-    Console.WriteLine(num[1]);
+    Console.WriteLine(numStr[1]);
 }
