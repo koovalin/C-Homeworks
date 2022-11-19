@@ -4,7 +4,7 @@
 
 Console.WriteLine("Введи 3-х значное число:");
 int numInt = int.Parse(Console.ReadLine()!);
-string numStr = Convert.ToString(num);
+string numStr = Convert.ToString(numInt);
 
 if (numStr.Length != 3)
     {
