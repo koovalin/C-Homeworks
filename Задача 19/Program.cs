@@ -5,18 +5,22 @@ Console.WriteLine("Введи 5-и значное число:");
 int num = int.Parse(Console.ReadLine()!);
 string s = num.ToString();
 
-if (s.Length == 5)
+if (s.Length != 5)
 {
-    bool b = true;
+    Console.WriteLine("Некорректное число!");
+}
+else if (s.Length == 5 && Palindrom(num) == true)
+    Console.WriteLine($"Число {num} полиндром!");
+else
+    Console.WriteLine($"Число {num} не полиндром!");
+
+
+
+bool Palindrom(int n)
+{
+    string s = num.ToString();
     for (int i = 0; i < s.Length / 2; i++)
         if (s[i] != s[s.Length - i - 1])
-            b = false;
-    if (b == true)
-        Console.WriteLine($"Число {num} полиндром!");
-    else
-        Console.WriteLine($"Число {num} не полиндром!");
+            return false;
+        return true;
 }
-else
-    Console.WriteLine("Некорректное число!");
-
-
