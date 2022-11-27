@@ -23,7 +23,7 @@ int[] PairInArray(int[] array){
 
     for (int i = 0; i < size; i++){
         if (i != array.Length - i - 1)
-            array2[i] = array[i] + array[array.Length - i - 1];
+            array2[i] = array[i] * array[array.Length - i - 1];
         else
             array2[i] = array[i];
     }
