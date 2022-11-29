@@ -3,7 +3,6 @@
 // 1, -7, 567, 89, 223-> 4
 
 int count = new Random().Next(6,15);
-Console.WriteLine(count);
 KeyInput(count);
 
 void KeyInput(int c)
